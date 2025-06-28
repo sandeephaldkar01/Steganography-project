@@ -1,65 +1,50 @@
-# Steganography-project
-A Python GUI project to hide secret messages inside images using LSB
+ # 🔐 Steganography Project
 
-# Steganography – Hiding Information in the Image 🖼️🔐
-
-This project demonstrates how to hide secret messages inside images using the **Least Significant Bit (LSB)** steganography technique.
-
-## 🧠 Project Summary
-This Python application allows you to:
-- Hide (encode) a secret message into an image.
-- Retrieve (decode) the hidden message from the encoded image.
-- Simple **GUI-based** interface using **Tkinter**.
+A Python GUI project to hide and retrieve secret messages inside images using the Least Significant Bit (LSB) technique.
 
 ---
 
-## 🚀 How to Run the Project
+## 📌 Features
 
-### 🛠️ Requirements
-Install Python dependencies by running:
-
-```bash
-pip install -r requirements.txt
-```
-
-### ▶️ Running the App
-
-```bash
-python main.py
-```
-
-### 🖼️ Inputs:
-- Any **.png image** file
-- Secret text (up to a few hundred characters)
-
-### 🧾 Outputs:
-- Encoded image saved to disk
-- Decoded message displayed in GUI
+- Hide secret text messages inside images
+- Retrieve hidden messages from encoded images
+- Simple and clean GUI using Tkinter
+- Uses Python Pillow library for image processing
 
 ---
 
-## 📸 Sample Outputs:
+## 🛠 Technologies Used
 
-### Original Image:
-![Original Image](screenshots/original_image.png)
-
-### Encoded Image:
-![Encoded Image](screenshots/encoded_image.png)
+- Python 3
+- Tkinter
+- Pillow (PIL)
 
 ---
 
-## 📂 Folder Structure:
-```
-steganography-project/
-├── main.py                  # Main app with GUI
-├── stegno_utils.py          # Steganography logic
-├── README.md                # Project description
-├── report.pdf               # Final report
-├── presentation.pptx        # PPT slides
-├── requirements.txt         # Libraries list
-├── screenshots/             # Output screenshots
-└── sample_images/           # Test input images
-```
+## 💻 How to Run the Project
+
+1. *Install dependencies* (only needed once):
+   ```bash
+   pip install pillow
+
+2. to encode a message into image
+ run this code:-   python steg_encode.py
+
+3. To decode the message from image  :- python steg_decode.py
+
+
+
+
+
+
+4.Steganography-project/
+│
+├── steg_encode.py       # GUI to encode secret message into image
+├── steg_decode.py       # GUI to decode message from image
+├── sandeep.jpeg         # Sample original image
+├── encoded_image.png    # Output encoded image
+├── README.md            # This file
+
 
 ## 👤 Author
 Name: Sandeep Haldkar
